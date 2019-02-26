@@ -42,7 +42,7 @@ namespace Vidly.ViewModel
 
         [Required]
         [Display(Name = "Genre")]
-        public byte? GenreId { get; set; }
+        public int? GenreId { get; set; }
 
         [Required]
         [Display(Name = "Date Added")]
@@ -54,6 +54,6 @@ namespace Vidly.ViewModel
 
         [Required]
         [Range(minimum: 1, maximum: 20, ErrorMessage = "The field Number in Stock must be between 1 and 20")]
-        public byte? NumberInStock { get; set; }
+        public int? NumberInStock { get; set; }
     }
 }
